@@ -1,6 +1,9 @@
 /* Imports */
+/* Inter font, 300 & 400 */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
 
+/* Rubik font, 400 & 700 */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
 
 /* Main Style (DONT TOUCH) */
 * {
@@ -40,8 +43,8 @@ footer {
 
 .container {
     position: absolute;
-    bottom: 91%;
-    left: 6%;
+    bottom: 88vh;
+    left: 18vh;
     height: 50px;
     width: 650px;
     background-color: rgba(123, 123, 123, 0.15);
@@ -51,10 +54,97 @@ footer {
 
 .logo {
     position: absolute;
-    bottom: 91%;
-    left: 2%;
+    bottom: 88vh;
+    left: 5vh;
     height: 50px;
     width: 50px;
     background-color: white;
 }
 
+.titleText {
+    position: absolute;
+    bottom: 50vh;
+    left: 15vh;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 85px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    color: white;
+}
+
+.subtitle {
+    position: absolute;
+    bottom: 71.5vh;
+    left: 18vh;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    color: white;
+}
+
+.descriptionText {
+    position: absolute;
+    width: 850px;
+    bottom: 42vh;
+    left: 18vh;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    color: white;
+}
+
+.buttonContainer1 {
+    position: absolute;
+    bottom: 30vh;
+    left: 60vh;
+    width: 200px;
+    height: 45px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    transition: ease .2s;
+}
+
+.buttonText1 {
+    position: relative;
+    top: 2px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.buttonContainer1:hover {
+    bottom: 30.5vh;
+    transition: ease .2s;
+}
+
+.buttonContainer2 {
+    position: absolute;
+    bottom: 30vh;
+    left: 25vh;
+    width: 200px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    transition: ease .2s;
+}
+
+.buttonText2 {
+    position: relative;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.buttonContainer2:hover {
+    bottom: 30.5vh;
+    transition: ease .2s;
+}
