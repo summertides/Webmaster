@@ -1,0 +1,60 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
+
+/* Main Style (DONT TOUCH) */
+* {
+    overflow-x: hidden;
+    -ms-overflox-style: none;
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+/* Site Style */
+.bg {
+    margin: 0;
+    background-color: black;
+    z-index: -100;
+}
+
+.bgVideo {
+    opacity: 25%;
+    z-index: -100;
+}
+
+footer {
+    margin: 25px;
+}
+
+.bottomText {
+    color: rgb(164, 164, 164);
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+.container {
+    position: absolute;
+    bottom: 91%;
+    left: 6%;
+    height: 50px;
+    width: 650px;
+    background-color: rgba(123, 123, 123, 0.15);
+    backdrop-filter: blur(6px);
+    border-radius: 15px
+}
+
+.logo {
+    position: absolute;
+    bottom: 91%;
+    left: 2%;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+}
+
