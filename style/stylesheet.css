@@ -16,6 +16,22 @@
     display: none;
 }
 
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
 /* Site Style */
 .bg {
     margin: 0;
@@ -24,7 +40,7 @@
 }
 
 .bgVideo {
-    opacity: 25%;
+    opacity: 40%;
     z-index: -100;
 }
 
@@ -32,6 +48,7 @@ footer {
     margin: 25px;
 }
 
+/* Footer Element, do not touch */
 .bottomText {
     color: rgb(164, 164, 164);
     font-size: 12px;
@@ -49,23 +66,31 @@ footer {
     width: 650px;
     background-color: rgba(123, 123, 123, 0.15);
     backdrop-filter: blur(6px);
-    border-radius: 15px
+    border-radius: 15px;
+    border-color: rgba(175, 175, 175, 0.2);
+    border-width: 2px;
+    border-style: solid;
 }
 
 .logo {
     position: absolute;
     bottom: 88vh;
-    left: 5vh;
+    left: 2.5%;
     height: 50px;
     width: 50px;
     background-color: white;
 }
 
+.titleBlock {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    bottom: 1000px;
+}
+
 .titleText {
-    position: absolute;
-    bottom: 50vh;
-    left: 15vh;
-    text-align: center;
+    margin-left: 120px;
+    text-align: left;
     font-family: 'Rubik', sans-serif;
     font-size: 85px;
     font-weight: 700;
@@ -74,9 +99,9 @@ footer {
 }
 
 .subtitle {
-    position: absolute;
-    bottom: 71.5vh;
-    left: 18vh;
+    position: relative;
+    top: 60px;
+    left: 150px;
     font-family: 'Inter', sans-serif;
     font-size: 15px;
     font-weight: 400;
@@ -85,10 +110,10 @@ footer {
 }
 
 .descriptionText {
-    position: absolute;
+    position: relative;
+    bottom: 60px;
+    left: 150px;
     width: 850px;
-    bottom: 42vh;
-    left: 18vh;
     font-family: 'Inter', sans-serif;
     font-size: 15px;
     font-weight: 400;
@@ -97,9 +122,9 @@ footer {
 }
 
 .buttonContainer1 {
-    position: absolute;
-    bottom: 30vh;
-    left: 60vh;
+    position: relative;
+    bottom: 85px;
+    left: 375px;
     width: 200px;
     height: 45px;
     background-color: white;
@@ -118,14 +143,14 @@ footer {
 }
 
 .buttonContainer1:hover {
-    bottom: 30.5vh;
+    bottom: 90px;
     transition: ease .2s;
 }
 
 .buttonContainer2 {
-    position: absolute;
-    bottom: 30vh;
-    left: 25vh;
+    position: relative;
+    bottom: 40px;
+    left: 150px;
     width: 200px;
     height: 40px;
     background-color: rgba(255, 255, 255, 0);
@@ -134,6 +159,7 @@ footer {
     border-width: 2px;
     border-radius: 10px;
     transition: ease .2s;
+    backdrop-filter: blur(8px);
 }
 
 .buttonText2 {
@@ -145,6 +171,6 @@ footer {
 }
 
 .buttonContainer2:hover {
-    bottom: 30.5vh;
+    bottom: 45px;
     transition: ease .2s;
 }
