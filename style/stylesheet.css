@@ -10,6 +10,7 @@
     overflow-x: hidden;
     -ms-overflox-style: none;
     scrollbar-width: none;
+    cursor: none;
 }
 
 *::-webkit-scrollbar {
@@ -30,6 +31,30 @@ a:hover {
 
 a:active {
     text-decoration: none;
+}
+
+.innerCursor {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+    border-width: 2px;
+    border-radius: 25px;
+    z-index: 2000;
+    pointer-events: none;
+    filter: drop-shadow(0 0rem 0.5rem rgb(0, 0, 0));
+    backdrop-filter: blur(8px);
+    transition: width 0.2s, height 0.2s, background-color 0.2s, border-color 0.2s;
+}
+
+.cursorHover {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: white;
+    transition: width 0.2s, height 0.2s, background-color 0.2s, border-color 0.2s;
 }
 
 /* Site Style */
@@ -76,9 +101,15 @@ footer {
     position: absolute;
     bottom: 88vh;
     left: 2.5%;
-    height: 50px;
-    width: 50px;
-    background-color: white;
+    height: 55px;
+    width: 55px;
+    opacity: 100%;
+    transition: ease 0.3s
+}
+
+.logo:hover {
+    transform: scale(105%);
+    transition: ease 0.3s
 }
 
 .titleBlock {
@@ -86,6 +117,7 @@ footer {
     height: 500px;
     width: 100%;
     bottom: 1000px;
+    overflow-y: hidden;
 }
 
 .titleText {
@@ -143,7 +175,7 @@ footer {
 }
 
 .buttonContainer1:hover {
-    bottom: 90px;
+    transform: scale(1.05);
     transition: ease .2s;
 }
 
@@ -171,6 +203,91 @@ footer {
 }
 
 .buttonContainer2:hover {
-    bottom: 45px;
+    transform: scale(1.05);
     transition: ease .2s;
+}
+
+.hoverblock {
+    position: absolute;
+    top: 358px;
+    width: 100%;
+    height: 200px;
+}
+
+.options {
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    opacity: 50%
+}
+
+.opt1 {
+    position: absolute;
+    left: 20px;
+    top: 13px;
+    transition: ease 0.4s
+}
+
+.opt1:hover {
+    transform: scale(110%);
+    opacity: 100;
+    transition: ease 0.4s;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.6)
+}
+
+.opt2 {
+    position: absolute;
+    left: 150px;
+    top: 13px;
+    transition: ease 0.4s
+}
+
+.opt2:hover {
+    transform: scale(110%);
+    opacity: 100;
+    transition: ease 0.4s;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.6)
+}
+
+.opt3 {
+    position: absolute;
+    left: 270px;
+    top: 13px;
+    transition: ease 0.4s
+}
+
+.opt3:hover {
+    transform: scale(110%);
+    opacity: 100;
+    transition: ease 0.4s;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.6)
+}
+
+.opt4 {
+    position: absolute;
+    left: 400px;
+    top: 13px;
+    transition: ease 0.4s
+}
+
+.opt4:hover {
+    transform: scale(110%);
+    opacity: 100;
+    transition: ease 0.4s;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.6)
+}
+
+.opt5 {
+    position: absolute;
+    left: 510px;
+    top: 13px;
+    transition: ease 0.4s
+}
+
+.opt5:hover {
+    transform: scale(110%);
+    opacity: 100;
+    transition: ease 0.4s;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.6)
 }
