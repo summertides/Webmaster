@@ -8,13 +8,9 @@
 /* Main Style (DONT TOUCH) */
 * {
     overflow-x: hidden;
-    -ms-overflox-style: none;
+    -ms-overflow-style: none;
     scrollbar-width: none;
     cursor: none;
-}
-
-*::-webkit-scrollbar {
-    display: none;
 }
 
 a:link {
@@ -313,6 +309,10 @@ footer {
 }
 
 /* About Page Section */
+.a-bg {
+    background-color: black;
+}
+
 .a-titlebox {
     position: absolute;
     top: 100px;
@@ -387,21 +387,37 @@ footer {
 
 .a-textdivide {
     position: relative;
-    width: 120%;
+    width: 350%;
     left: -10px;
-    top: -910px;
+    top: -1000px;
     background: linear-gradient(to right, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.1) 100%);
     background-size: 200% auto;
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-animation: gradientslide 1s linear infinite;
-    animation: gradientslide 1s linear infinite;
+    -webkit-animation: gradientslide 7s linear infinite;
+    animation: gradientslide 7s linear infinite;
     font-family: 'Inter', sans-serif;
     font-style: italic;
     font-size: 12px;
 }
+
+.a-info-textbox {
+    position: absolute;
+    left: 7.5%;
+    top: 320px;
+    width: 85%;
+    height: 450px;
+    border-style: solid;
+    background-color: rgba(123, 123, 123, 0.15);
+    backdrop-filter: blur(6px);
+    border-radius: 15px;
+    border-color: rgba(175, 175, 175, 0.2);
+    overflow-y: hidden;
+}
+
+/* KEYFRAMES */
 
 @-webkit-keyframes gradientslide {
     to {
