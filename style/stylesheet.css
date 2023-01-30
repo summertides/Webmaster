@@ -5,12 +5,14 @@
 /* Rubik font, 400 & 700 */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
 
+/* Roboto font, 700 */
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
 /* Main Style (DONT TOUCH) */
 * {
     overflow-x: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    cursor: none;
 }
 
 a:link {
@@ -29,47 +31,56 @@ a:active {
     text-decoration: none;
 }
 
-.outerCursor {
+/* Splash Screen */
+.splash {
+    background: black;
     position: fixed;
-    left: -5px;
-    top: -5px;
-    width: 5px;
-    height: 5px;
-    border-radius: 10px;
-    background-color: white;
-    pointer-events: none;
-    filter: drop-shadow(0 0rem 0.5rem black);
-    z-index: 2000;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: 5000;
+    cursor: none;
 }
 
-.innerCursor {
+.splash.display-none {
+    background: black;
     position: fixed;
-    width: 10px;
-    height: 10px;
-    background-color: white;
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0);
-    border-width: 2px;
-    border-radius: 25px;
-    z-index: 2000;
-    pointer-events: none;
-    filter: drop-shadow(0 0rem 0.5rem rgb(0, 0, 0));
-    backdrop-filter: blur(8px);
-    transition: width 0.2s, height 0.2s, background-color 0.2s, border-color 0.2s;
+    opacity: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: 5000;
+    cursor: none;
+    animation: slide 2s ease forwards;
 }
 
-.cursorHover {
-    width: 20px;
-    height: 20px;
-    background-color: rgba(0, 0, 0, 0);
-    border-color: white;
-    transition: width 0.2s, height 0.2s, background-color 0.2s, border-color 0.2s;
+.splashText {
+    position: relative;
+    text-align: center;
+    line-height: 90vh;
+    margin: auto;
+    color: white;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0%;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 1s;
 }
 
-.cursorDown {
-    width: 20px;
-    height: 10px;
-    transition: width 0.05s, height 0.05s;
+@keyframes slide {
+    to {
+        top: -1000px;
+        z-index: -200;
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 100%;
+        letter-spacing: 12px;
+    }
 }
 
 /* Site Style */
@@ -81,6 +92,11 @@ a:active {
 
 .bgVideo {
     opacity: 40%;
+    z-index: -100;
+}
+
+.bgVideo1 {
+    opacity: 0%;
     z-index: -100;
 }
 
@@ -100,9 +116,9 @@ footer {
 
 /* Index Page Section */
 .container {
-    position: absolute;
-    bottom: 88vh;
-    left: 18vh;
+    position: relative;
+    bottom: 1060px;
+    margin: auto;
     height: 50px;
     width: 650px;
     background-color: rgba(123, 123, 123, 0.15);
@@ -311,6 +327,7 @@ footer {
 /* About Page Section */
 .a-bg {
     background-color: black;
+    margin: 0;
 }
 
 .a-titlebox {
@@ -324,42 +341,45 @@ footer {
 
 .a-toptext {
     position: relative;
-    left: 350px;
+    left: -700px;
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
     font-size: 18px;
     letter-spacing: 1px;
     color: white;
     opacity: 70%;
+    animation: slideIn 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
 }
 
 .a-titletext-viva {
     position: relative;
     top: -140px;
-    left: 120px;
+    left: 2500px;
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
     font-size: 128px;
     letter-spacing: 3px;
     color: white;
+    animation: text-viva 2s ease forwards;
 }
 
 .a-titletext-galactica {
     position: relative;
     top: -300px;
-    left: 80px;
+    left: -2080px;
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
     font-size: 128px;
     letter-spacing: 3px;
     color: white;
+    animation: text-galactica 2.5s ease forwards;
 }
 
 .a-titletext-viva-s {
     position: relative;
     width: 2000%;
     top: -700px;
-    left: -219px;
+    left: 2500px;
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
     font-size: 128px;
@@ -368,13 +388,14 @@ footer {
     -webkit-text-stroke-width: 4px;
     -webkit-text-stroke-color: white;
     opacity: 20%;
+    animation: text-viva-s 5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
 }
 
 .a-titletext-galactica-s {
     position: relative;
     width: 2000%;
     top: -860px;
-    left: -714px;
+    left: -12000px;
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
     font-size: 128px;
@@ -383,12 +404,13 @@ footer {
     -webkit-text-stroke-width: 4px;
     -webkit-text-stroke-color: white;
     opacity: 20%;
+    animation: text-galactica-s 5.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
 }
 
 .a-textdivide {
     position: relative;
     width: 350%;
-    left: -10px;
+    left: -50px;
     top: -1000px;
     background: linear-gradient(to right, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.1) 100%);
     background-size: 200% auto;
@@ -406,7 +428,7 @@ footer {
 .a-info-textbox {
     position: absolute;
     left: 7.5%;
-    top: 320px;
+    top: 490px;
     width: 85%;
     height: 450px;
     border-style: solid;
@@ -418,6 +440,35 @@ footer {
 }
 
 /* KEYFRAMES */
+@keyframes slideIn {
+    to {
+        left: 350px;
+    }
+}
+
+@keyframes text-viva {
+    to {
+        left: 120px;
+    }
+}
+
+@keyframes text-viva-s {
+    to {
+        left: -558px;
+    }
+}
+
+@keyframes text-galactica {
+    to {
+        left: 80px;
+    }
+}
+
+@keyframes text-galactica-s {
+    to {
+        left: -714px;
+    }
+}
 
 @-webkit-keyframes gradientslide {
     to {
