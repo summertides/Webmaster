@@ -8,6 +8,9 @@
 /* Roboto font, 700 */
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 
+/* Source Sans Pro font, 900 */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
+
 /* Main Style (DONT TOUCH) */
 * {
     overflow-x: hidden;
@@ -531,9 +534,144 @@ footer {
     position: relative;
     margin: auto;
     text-align: center;
-    bottom: 1000px;
+    bottom: 1050px;
     font-family: 'Inter', sans-serif;
+    font-style: italic;
     font-size: 12px;
     font-weight: 400;
+    letter-spacing: 7px;
     color: white;
+}
+
+.p-desc {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 650px;
+    bottom: 975px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    color: white;
+}
+
+.p-t1-box {
+    position: absolute;
+    transform: translate(-50%, 0);
+    bottom: -250px;
+    left: 20%;
+    height: 450px;
+    width: 350px;
+    background: linear-gradient(150deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 100%) padding-box,
+                linear-gradient(290deg, rgba(2, 0, 36, 1) 0%, rgba(3, 62, 80, 1) 100%) border-box;
+    background-size: 110% 110%;
+    background-position: -10px;
+    border: 4px solid transparent;
+    border-radius: 25px;
+    transition: 0.5s ease;
+    opacity: 0;
+    animation: entryUp 1.5s ease forwards;
+    animation-delay: 2s;
+}
+
+.p-t1-box:hover {
+    width: 365px;
+    height: 465px;
+    transition: 0.5s ease;
+}
+
+.p-t1-text {
+    position: relative;
+    top: 30px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    z-index: 500;
+}
+
+.p-t2-box {
+    position: absolute;
+    transform: translate(-50%, 0);
+    bottom: -250px;
+    left: 50%;
+    height: 450px;
+    width: 350px;
+    background: linear-gradient(150deg, rgba(36,0,0,1) 0%, rgba(0,0,0,1) 100%) padding-box,
+                linear-gradient(290deg, rgba(36,0,0,1) 10%, rgba(129,12,12,1) 100%) border-box;
+    background-size: 110% 110%;
+    background-position: -10px;
+    border: 4px solid transparent;
+    border-radius: 25px;
+    transition: 0.5s ease;
+    opacity: 0;
+    animation: entryUp 2s ease forwards;
+    animation-delay: 1s;
+}
+
+.p-t2-box:hover {
+    width: 365px;
+    height: 465px;
+    transition: 0.5s ease;
+}
+
+.p-t2-text {
+    position: relative;
+    top: 30px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    z-index: 500;
+}
+
+.p-t3-box {
+    position: absolute;
+    transform: translate(-50%, 0);
+    bottom: -250px;
+    left: 80%;
+    height: 450px;
+    width: 350px;
+    background: linear-gradient(150deg, rgba(36,33,0,1) 0%, rgba(0, 0, 0, 1) 90%) padding-box,
+                linear-gradient(290deg, rgba(36,33,0,1) 10%, rgba(129,125,12,1) 100%) border-box;
+    background-size: 110% 110%;
+    background-position: -10px;
+    border: 4px solid transparent;
+    border-radius: 25px;
+    transition: 0.5s ease;
+    opacity: 0;
+    animation: entryUp 2s ease forwards;
+    animation-delay: 1.5s;
+}
+
+.p-t3-box:hover {
+    width: 365px;
+    height: 465px;
+    transition: 0.5s ease;
+}
+
+.p-t3-text {
+    position: relative;
+    top: 30px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    z-index: 500;
+}
+
+/* Pricing Keyframes */
+
+@keyframes entryUp {
+    to {
+        opacity: 1;
+        bottom: -170px;
+    }
 }
