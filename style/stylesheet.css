@@ -110,6 +110,90 @@ footer {
     margin: 25px;
 }
 
+#icon-nav1 {
+    position: fixed;
+    filter: invert(100%);
+    top: -6vh;
+    right: 34vh;
+    height: 3.5vh;
+    width: 3.5vh;
+    transition: ease 0.5s;
+}
+
+#icon-nav2 {
+    position: fixed;
+    filter: invert(100%);
+    top: -6vh;
+    right: 28vh;
+    height: 3.5vh;
+    width: 3.5vh;
+    transition: ease 0.5s;
+}
+
+#icon-nav3 {
+    position: fixed;
+    filter: invert(100%);
+    top: -6vh;
+    right: 22vh;
+    height: 3.5vh;
+    width: 3.5vh;
+    transition: ease 0.5s;
+}
+
+#icon-nav4 {
+    position: fixed;
+    filter: invert(100%);
+    top: -6vh;
+    right: 16vh;
+    height: 3.5vh;
+    width: 3.5vh;
+    transition: ease 0.5s;
+}
+
+#icon-nav5 {
+    position: fixed;
+    filter: invert(100%);
+    top: -6vh;
+    right: 10vh;
+    height: 3.5vh;
+    width: 3.5vh;
+    transition: ease 0.5s;
+}
+
+#icon-nav6 {
+    position: fixed;
+    filter: invert(100%);
+    top: -6vh;
+    right: 4vh;
+    height: 3.5vh;
+    width: 3.5vh;
+    transition: ease 0.5s;
+}
+
+#icon-nav1:hover {
+    transform: scale(1.25)
+}
+
+#icon-nav2:hover {
+    transform: scale(1.25)
+}
+
+#icon-nav3:hover {
+    transform: scale(1.25)
+}
+
+#icon-nav4:hover {
+    transform: scale(1.25)
+}
+
+#icon-nav5:hover {
+    transform: scale(1.25)
+}
+
+#icon-nav6:hover {
+    transform: scale(1.25)
+}
+
 /* Footer Element, do not touch */
 .bottomText {
     color: rgb(164, 164, 164);
@@ -145,10 +229,11 @@ footer {
 
 .logo {
     position: absolute;
-    bottom: 88vh;
+    filter: invert(100%);
+    bottom: 90vh;
     left: 2.5%;
-    height: 55px;
-    width: 55px;
+    height: 6vh;
+    width: 6vh;
     opacity: 100%;
     transition: ease 0.3s
 }
@@ -519,7 +604,21 @@ footer {
 }
 
 /* Pricing Page Section */
-.p-heading {
+#p-heading {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    left: 20px;
+    bottom: 1040px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 3vh;
+    font-weight: 700;
+    color: white;
+    z-index: 600000;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.4s
+}
+
+.p-heading-s {
     position: relative;
     margin: auto;
     text-align: center;
@@ -528,6 +627,12 @@ footer {
     font-size: 84px;
     font-weight: 700;
     color: white;
+    z-index: 100;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.4s
+}
+
+.p-heading-stick {
+    position: sticky;
 }
 
 .p-sub-heading {
@@ -548,7 +653,7 @@ footer {
     margin: auto;
     text-align: center;
     width: 650px;
-    bottom: 975px;
+    bottom: 65rem;
     font-family: 'Inter', sans-serif;
     font-size: 13px;
     font-weight: 400;
@@ -561,14 +666,14 @@ footer {
     transform: translate(-50%, 0);
     bottom: -250px;
     left: 20%;
-    height: 450px;
-    width: 350px;
+    height: 70%;
+    width: 26%;
     background: linear-gradient(150deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 100%) padding-box,
                 linear-gradient(290deg, rgba(2, 0, 36, 1) 0%, rgba(3, 62, 80, 1) 100%) border-box;
     background-size: 110% 110%;
     background-position: -10px;
-    border: 4px solid transparent;
-    border-radius: 25px;
+    border: 0.7vh solid transparent;
+    border-radius: 4vh;
     transition: 0.5s ease;
     opacity: 0;
     animation: entryUp 1.5s ease forwards;
@@ -576,8 +681,8 @@ footer {
 }
 
 .p-t1-box:hover {
-    width: 365px;
-    height: 465px;
+    height: 72%;
+    width: 28%;
     transition: 0.5s ease;
 }
 
@@ -589,7 +694,45 @@ footer {
     color: white;
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 5.2vh;
+    z-index: 500;
+}
+
+.p-t1-desc {
+    position: relative;
+    top: 30px;
+    width: 55vh;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 2vh;
+}
+
+.p-t1-price {
+    position: relative;
+    top: 70px;
+    right: 23px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 8vh;
+    z-index: 500;
+}
+
+.p-t1-price-s {
+    position: relative;
+    top: 50px;
+    left: 90px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 2vh;
     z-index: 500;
 }
 
@@ -598,14 +741,14 @@ footer {
     transform: translate(-50%, 0);
     bottom: -250px;
     left: 50%;
-    height: 450px;
-    width: 350px;
+    height: 70%;
+    width: 26%;
     background: linear-gradient(150deg, rgba(36,0,0,1) 0%, rgba(0,0,0,1) 100%) padding-box,
                 linear-gradient(290deg, rgba(36,0,0,1) 10%, rgba(129,12,12,1) 100%) border-box;
     background-size: 110% 110%;
     background-position: -10px;
-    border: 4px solid transparent;
-    border-radius: 25px;
+    border: 0.7vh solid transparent;
+    border-radius: 4vh;
     transition: 0.5s ease;
     opacity: 0;
     animation: entryUp 2s ease forwards;
@@ -613,8 +756,8 @@ footer {
 }
 
 .p-t2-box:hover {
-    width: 365px;
-    height: 465px;
+    height: 72%;
+    width: 28%;
     transition: 0.5s ease;
 }
 
@@ -626,7 +769,45 @@ footer {
     color: white;
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 5.2vh;
+    z-index: 500;
+}
+
+.p-t2-desc {
+    position: relative;
+    top: 30px;
+    width: 52vh;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 2vh;
+}
+
+.p-t2-price {
+    position: relative;
+    top: 70px;
+    right: 22px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 8vh;
+    z-index: 500;
+}
+
+.p-t2-price-s {
+    position: relative;
+    top: 50px;
+    left: 97px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 2vh;
     z-index: 500;
 }
 
@@ -635,14 +816,14 @@ footer {
     transform: translate(-50%, 0);
     bottom: -250px;
     left: 80%;
-    height: 450px;
-    width: 350px;
+    height: 70%;
+    width: 26%;
     background: linear-gradient(150deg, rgba(36,33,0,1) 0%, rgba(0, 0, 0, 1) 90%) padding-box,
                 linear-gradient(290deg, rgba(36,33,0,1) 10%, rgba(129,125,12,1) 100%) border-box;
     background-size: 110% 110%;
     background-position: -10px;
-    border: 4px solid transparent;
-    border-radius: 25px;
+    border: 0.7vh solid transparent;
+    border-radius: 4vh;
     transition: 0.5s ease;
     opacity: 0;
     animation: entryUp 2s ease forwards;
@@ -650,21 +831,110 @@ footer {
 }
 
 .p-t3-box:hover {
-    width: 365px;
-    height: 465px;
+    height: 72%;
+    width: 28%;
     transition: 0.5s ease;
 }
 
 .p-t3-text {
     position: relative;
-    top: 30px;
+    top: 2rem;
     margin: auto;
     text-align: center;
     color: white;
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 5.2vh;
     z-index: 500;
+}
+
+.p-t3-desc {
+    position: relative;
+    top: 30px;
+    width: 50vh;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 2vh;
+}
+
+.p-t3-price {
+    position: relative;
+    top: 70px;
+    right: 23px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 8vh;
+    z-index: 500;
+}
+
+.p-t3-price-s {
+    position: relative;
+    top: 50px;
+    left: 90px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 2vh;
+    z-index: 500;
+}
+
+#p-stickybar {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 1);
+    width: 100%;
+    height: 9vh;
+    bottom: 105vh;
+    z-index: 10000;
+    opacity: 100%;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+    transition: ease 0.6s;
+}
+
+.p-confirm {
+    position: relative;
+    bottom: 50vh;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 5.2vh;
+    z-index: 500;
+}
+
+.p-ready-button {
+    position: absolute;
+    bottom: -63vh;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0);
+    overflow-y: hidden;
+    width: 20vh;
+    height: 6vh;
+    border-radius: 2vh;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.p-ready-button-text {
+    position: relative;
+    margin: auto;
+    top: 1.5vh;
+    text-align: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 2vh;
 }
 
 /* Pricing Keyframes */
@@ -672,6 +942,6 @@ footer {
 @keyframes entryUp {
     to {
         opacity: 1;
-        bottom: -170px;
+        bottom: -10rem;
     }
 }
