@@ -11,6 +11,9 @@
 /* Source Sans Pro font, 900 */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
 
+/* Montserrat font, 200, 800 */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:800,200');
+
 /* Main Style (DONT TOUCH) */
 * {
     overflow-x: hidden;
@@ -543,7 +546,7 @@ footer {
     left: 7.5%;
     top: 490px;
     width: 85%;
-    height: 450px;
+    height: 190px;
     border-style: solid;
     background-color: rgba(123, 123, 123, 0.15);
     backdrop-filter: blur(6px);
@@ -553,7 +556,7 @@ footer {
 }
 
 .a-info-text {
-    font-size: 13px;
+    font-size: 16px;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     color: white;
@@ -899,8 +902,9 @@ footer {
 }
 
 .p-confirm {
-    position: relative;
-    bottom: 50vh;
+    position: absolute;
+    width: 100%;
+    bottom: -335px;
     margin: auto;
     text-align: center;
     color: white;
@@ -912,7 +916,7 @@ footer {
 
 .p-ready-button {
     position: absolute;
-    bottom: -63vh;
+    bottom: -400px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -925,6 +929,12 @@ footer {
     border-color: white;
     border-style: solid;
     border-width: 2px;
+    transition: ease 1.0s
+}
+
+.p-ready-button:hover {
+    transform: scale(1.2);
+    transition: ease 1.0s
 }
 
 .p-ready-button-text {
@@ -945,3 +955,259 @@ footer {
         bottom: -10rem;
     }
 }
+
+/* Purchasing Page */
+  
+.pur-title {
+    position: relative;
+    margin: auto;
+    text-align: left;
+    left: 20vh;
+    bottom: 990px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14vh;
+    font-weight: 700;
+    color: white;
+    z-index: 100;
+}
+
+.pur-blurbehind1 {
+    position: absolute;
+    top: 0vh;
+    width: 100%;
+    height: 1000%;
+    pointer-events: none;
+    transition: ease 0.8s;
+    z-index: 350
+}
+
+.pur-blurbehind1:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(3px);
+    z-index: 380;
+    transition: ease 0.8s;
+}
+
+.pur-blurbehind2 {
+    position: absolute;
+    top: 0vh;
+    width: 100%;
+    height: 1000%;
+    pointer-events: none;
+    transition: ease 0.8s;
+    z-index: 350;
+}
+
+.pur-blurbehind2:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(3px);
+    z-index: 350;
+    transition: ease 0.8s;
+}
+
+.pur-blurbehind3 {
+    position: absolute;
+    top: 0vh;
+    width: 100%;
+    height: 1000%;
+    pointer-events: none;
+    transition: ease 0.8s;
+    z-index: 330;
+}
+
+.pur-blurbehind3:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(3px);
+    z-index: 370;
+    transition: ease 0.8s;
+}
+
+.pur-opt1 {
+    position: absolute;
+    background: linear-gradient(150deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 100%) padding-box,
+                linear-gradient(290deg, rgba(2, 0, 36, 1) 0%, rgba(3, 62, 80, 1) 100%) border-box;
+    background-size: 110% 110%;
+    background-position: -10px;
+    border: 0.7vh solid transparent;
+    border-radius: 4vh;
+    z-index: 300;
+    top: 34vh;
+    left: 6%;
+    width: 30%;
+    height: 17vh;
+    transition: ease 0.5s;
+    pointer-events: auto;
+    overflow: hidden;
+}
+
+.pur-opt2 {
+    position: absolute;
+    background: linear-gradient(150deg, rgba(36,0,0,1) 0%, rgba(0,0,0,1) 100%) padding-box,
+                linear-gradient(290deg, rgba(36,0,0,1) 10%, rgba(129,12,12,1) 100%) border-box;
+    background-size: 110% 110%;
+    background-position: -10px;
+    border: 0.7vh solid transparent;
+    border-radius: 4vh;
+    z-index: 200;
+    top: 56vh;
+    left: 6%;
+    width: 30%;
+    height: 17vh;
+    transition: ease 0.5s;
+    pointer-events: auto;
+    overflow: hidden;
+}
+
+.pur-opt3 {
+    position: absolute;
+    background: linear-gradient(150deg, rgba(36,33,0,1) 0%, rgba(0, 0, 0, 1) 90%) padding-box,
+                linear-gradient(290deg, rgba(36,33,0,1) 10%, rgba(129,125,12,1) 100%) border-box;
+    background-size: 110% 110%;
+    background-position: -10px;
+    border: 0.7vh solid transparent;
+    border-radius: 4vh;
+    z-index: 100;
+    top: 78vh;
+    left: 6%;
+    width: 30%;
+    height: 17vh;
+    transition: ease 0.5s;
+    pointer-events: auto;
+    overflow: hidden;
+}
+
+.pur-opt1:hover {
+    height: 45vh;
+    transform: scale(1.1);
+    transition: ease 0.5s;
+}
+
+.pur-opt2:hover {
+    height: 45vh;
+    transform: scale(1.1);
+    transition: ease 0.5s;
+}
+
+.pur-opt3:hover {
+    height: 45vh;
+    transform: scale(1.1);
+    transition: ease 0.5s;
+}
+
+.pur-opt1-title {
+    position: relative;
+    top: 33px;
+    margin: auto;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 5.2vh;
+    z-index: 500;
+}
+
+.pur-opt1-desc {
+    position: relative;
+    top: 70px;
+    width: 52vh;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 2vh;
+}
+
+.pur-opt2-title {
+    position: relative;
+    top: 33px;
+    margin: auto;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 5.2vh;
+    z-index: 500;
+}
+
+.pur-opt2-desc {
+    position: relative;
+    top: 70px;
+    width: 52vh;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 2vh;
+}
+
+.pur-opt3-title {
+    position: relative;
+    top: 33px;
+    margin: auto;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;color: transparent;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 5.2vh;
+    z-index: 500;
+}
+
+.pur-opt3-desc {
+    position: relative;
+    top: 70px;
+    width: 52vh;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 2vh;
+}
+
+.pur-mainbox {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.06);
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.4);
+    border-radius: 4vh;
+    backdrop-filter: blur(18px);
+    z-index: 20;
+    bottom: -20vh;
+    right: 6%;
+    width: 55%;
+    height: 85vh;
+}
+
+.marquee {
+  position: absolute;
+  top: -15vh;
+  width: 10000vh;
+  font-family: sans-serif;
+  font-weight: 700;
+  min-height: 1000vh;
+  z-index: -200;
+}
+  
+.marquee .inner {
+  position: relative;
+  width: 100%;
+  display: flex;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  font-size: 50vh;
+}
+  
+.marquee .inner > * {
+  white-space: nowrap;
+  padding: 1rem;
+}
+
+/* Purchasing Keyframes */
