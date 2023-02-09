@@ -232,7 +232,7 @@ footer {
 
 .logo {
     position: absolute;
-    filter: invert(100%);
+    filter: invert(85%);
     bottom: 90vh;
     left: 2.5%;
     height: 6vh;
@@ -544,15 +544,26 @@ footer {
 .a-info-textbox {
     position: absolute;
     left: 7.5%;
-    top: 490px;
+    top: 80vh;
     width: 85%;
-    height: 190px;
+    height: 31vh;
     border-style: solid;
     background-color: rgba(123, 123, 123, 0.15);
     backdrop-filter: blur(6px);
     border-radius: 15px;
     border-color: rgba(175, 175, 175, 0.2);
     overflow-y: hidden;
+}
+
+.a-info-title {
+    position: relative;
+    font-family: 'Rubik', sans-serif;
+    left: 4vh;
+    top: -3vh;
+    font-weight: 700;
+    font-size: 6vh;
+    text-shadow: 0px 0px 15px black;
+    color: white;
 }
 
 .a-info-text {
@@ -1151,9 +1162,7 @@ footer {
     top: 33px;
     margin: auto;
     text-align: center;
-    color: transparent;
-    -webkit-text-stroke-color: white;
-    -webkit-text-stroke-width: 1px;color: transparent;
+    color: white;
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
     font-size: 5.2vh;
@@ -1179,7 +1188,7 @@ footer {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    top: 34vh;
+    top: 36vh;
     background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(184, 184, 184) 100%);
     border-radius: 4vh;
     width: 10%;
@@ -1263,4 +1272,237 @@ footer {
   padding: 1rem;
 }
 
-/* Purchasing Keyframes */
+.pur-inputbox {
+    position: absolute;
+    outline: none;
+    margin: 8px 0px;
+    padding: 0px 20px;
+    color: rgb(184, 184, 184);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    font-style: uppercase;
+    caret-color: rgba(255, 255, 255, 0.3);
+    width: 20vh;
+    height: 6vh;
+    top: 16vh;
+    left: 6vh;
+    border-style: none;
+    border-radius: 1.5vh;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: ease 0.3s;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+}
+
+.pur-inputbox::placeholder {
+    position: absolute;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;   
+    transition: ease 0.3s;
+    top: 1.88vh;
+    left: 4vh;
+}
+
+.pur-inputbox:focus {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-style: none;
+    transition: ease 0.3s;
+}
+
+.pur-inputbox:focus::placeholder {
+    color: white;
+}
+
+.pur-divide {
+    position: absolute;
+    color: transparent;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 6vh;
+    width: 0.5vh;
+    height: 70vh;
+    top: 8vh;
+    left: 65vh;
+}
+
+.pur-maintxt {
+    position: absolute;
+    top: 3vh;
+    left: 6vh;
+    font-family: 'Rubik', sans-serif;
+    font-size: 6vh;
+    color: white;
+    font-weight: 700;   
+}
+
+.pur-maintxt2 {
+    position: absolute;
+    top: 3vh;
+    left: 70vh;
+    font-family: 'Rubik', sans-serif;
+    font-size: 6vh;
+    color: white;
+    font-weight: 700;   
+}
+
+.pur-ordertxt {
+    position: absolute;
+    color: white;
+    left: 72vh;
+    top: 14vh;
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5vh;
+}
+
+#pur-orderbutton {
+    position: absolute;
+    width: 20vh;
+    height: 6vh;
+    top: 74vh;
+    left: 72vh;
+    background: linear-gradient(150deg, rgb(12, 78, 12) 0%, rgb(0, 0, 0) 90%) padding-box,
+                linear-gradient(290deg, rgb(6, 36, 0) 10%, rgb(32, 129, 12) 100%) border-box;
+    background-size: 110% 110%;
+    background-position: -10px;
+    border: 0.7vh solid transparent;
+    border-radius: 4vh;
+    transition: ease 0.4s;
+    overflow: hidden;
+}
+
+.pur-orderconfirm {
+    position: relative;
+    pointer-events: none;
+    margin: auto;
+    text-align: center;
+    top: 1.5vh;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    z-index: 2000;
+    transition: ease 0.4s;
+}
+
+.pur-orderdeny {
+    position: relative;
+    margin: auto;
+    pointer-events: none;
+    text-align: center;
+    top: 6vh;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    z-index: 2000;
+    transition: ease 0.4s;
+}
+
+#pur-orderbutton:hover {
+    width: 36vh;
+    background: linear-gradient(150deg, rgb(83, 83, 83) 0%, rgb(0, 0, 0) 90%) padding-box,
+                linear-gradient(290deg, rgb(34, 34, 34) 10%, rgb(121, 121, 121) 100%) border-box;
+    transition: ease 0.4s;
+}
+
+#pur-orderbutton:hover .pur-orderconfirm {
+    top: -10vh;
+    transition: ease 0.4s;
+}
+
+#pur-orderbutton:hover .pur-orderdeny {
+    top: -1.55vh;
+    transition: ease 0.4s;
+}
+
+.pur-under {
+    position: absolute;
+    bottom: -1000vh;
+    color: white;
+}
+
+.pur-backbutton {
+    position: absolute;
+    top: 3vh;
+    left: 16vh;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 20vh;
+    height: 7vh;
+    overflow: hidden;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.2);
+    border-radius: 3vh;
+    transition: ease 1s;
+}
+
+.pur-backtext {
+    position: relative;
+    top: 2vh;
+    margin: auto;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+}
+
+.pur-backbutton:hover {
+    transform: scale(1.1);
+    transition: ease 1s;
+}
+
+/* Safety Style */
+
+.s-title {
+    position: absolute;
+    top: 8vh;
+    left: 13vh;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 16vh;
+}
+
+.s-bardiv {
+    position: absolute;
+    left: 90vh;
+    top: 26.9vh;
+    overflow: hidden;
+    color: transparent;
+    width: 0%;
+    height: 2vh;
+    background-color: white;
+    border-radius: 0.6vh;
+    animation: s-barIn 1s cubic-bezier(0.23, 1, 0.320, 1) forwards;
+    animation-delay: 1s;
+}
+
+.s-safebox {
+    position: absolute;
+    width: 100vh;
+    height: 13vh;
+    top: 38vh;
+    left: 13vh;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.15);
+    border-radius: 3vh;
+}
+
+.s-safetxt {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    top: 2vh;
+    width: 92vh;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+@keyframes s-barIn {
+    to {
+        width: 50%;
+    }
+}
