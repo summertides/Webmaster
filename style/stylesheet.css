@@ -1172,6 +1172,59 @@ footer {
     font-size: 2vh;
 }
 
+.purchase-button3 {
+    position: absolute;
+    transform: trasnlateX(50%, 0);
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 34vh;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(184, 184, 184) 100%);
+    border-radius: 4vh;
+    width: 10%;
+    height: 6vh;
+    overflow: hidden;
+    transition: ease 0.5s
+}
+
+.purchase-svg3 {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 3vh;
+    height: 3vh;
+    transition: ease 0.5s
+}
+
+.purchase-text3 {
+    position: relative;
+    color: black;
+    top: -10vh;
+    text-align: center;
+    margin: auto;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 3vh;
+    letter-spacing: 0.2vh;
+    transition: ease 0.5s;
+}
+
+.purchase-button3:hover .purchase-text3 {
+    top: 1.25vh;
+    transition: ease 0.5s;
+}
+
+.purchase-button3:hover .purchase-svg3 {
+    top: 10vh;
+    transition: ease 0.5s
+}
+
+.purchase-button3:hover {
+    width: 45%;
+    transition: ease 0.5s
+}
+
 .pur-mainbox {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.06);
