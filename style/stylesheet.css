@@ -212,13 +212,13 @@ footer {
     position: relative;
     bottom: 1060px;
     margin: auto;
-    height: 50px;
-    width: 650px;
+    height: 7.7vh;
+    width: 100vh;
     background-color: rgba(123, 123, 123, 0.15);
     backdrop-filter: blur(6px);
-    border-radius: 15px;
+    border-radius: 2.3vh;
     border-color: rgba(175, 175, 175, 0.2);
-    border-width: 2px;
+    border-width: 0.5vh;
     border-style: solid;
     transition: 1s ease
 }
@@ -363,14 +363,14 @@ footer {
     color: white;
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
-    font-size: 19px;
+    font-size: 2.92vh;
     opacity: 50%
 }
 
 .opt1 {
     position: absolute;
-    left: 20px;
-    top: 13px;
+    left: 3.08vh;
+    top: 2vh;
     transition: ease 0.4s
 }
 
@@ -383,8 +383,8 @@ footer {
 
 .opt2 {
     position: absolute;
-    left: 150px;
-    top: 13px;
+    left: 23.11vh;
+    top: 2vh;
     transition: ease 0.4s
 }
 
@@ -397,8 +397,8 @@ footer {
 
 .opt3 {
     position: absolute;
-    left: 270px;
-    top: 13px;
+    left: 41.6vh;
+    top: 2vh;
     transition: ease 0.4s
 }
 
@@ -411,8 +411,8 @@ footer {
 
 .opt4 {
     position: absolute;
-    left: 400px;
-    top: 13px;
+    left: 61.63vh;
+    top: 2vh;
     transition: ease 0.4s
 }
 
@@ -425,8 +425,8 @@ footer {
 
 .opt5 {
     position: absolute;
-    left: 510px;
-    top: 13px;
+    left: 78.58vh;
+    top: 2vh;
     transition: ease 0.4s
 }
 
@@ -715,7 +715,7 @@ footer {
 .p-t1-desc {
     position: relative;
     top: 30px;
-    width: 55vh;
+    width: 45vh;
     margin: auto;
     text-align: center;
     color: white;
@@ -790,7 +790,7 @@ footer {
 .p-t2-desc {
     position: relative;
     top: 30px;
-    width: 52vh;
+    width: 45vh;
     margin: auto;
     text-align: center;
     color: white;
@@ -865,7 +865,7 @@ footer {
 .p-t3-desc {
     position: relative;
     top: 30px;
-    width: 50vh;
+    width: 45vh;
     margin: auto;
     text-align: center;
     color: white;
@@ -974,7 +974,7 @@ footer {
     margin: auto;
     text-align: left;
     left: 20vh;
-    bottom: 990px;
+    bottom: 152.54vh;
     font-family: 'Rubik', sans-serif;
     font-size: 14vh;
     font-weight: 700;
@@ -1107,7 +1107,7 @@ footer {
 
 .pur-opt1-title {
     position: relative;
-    top: 33px;
+    top: 5.08vh;
     margin: auto;
     text-align: center;
     color: transparent;
@@ -1121,7 +1121,7 @@ footer {
 
 .pur-opt1-desc {
     position: relative;
-    top: 70px;
+    top: 10.78vh;
     width: 52vh;
     margin: auto;
     text-align: center;
@@ -1133,7 +1133,7 @@ footer {
 
 .pur-opt2-title {
     position: relative;
-    top: 33px;
+    top: 5.08vh;
     margin: auto;
     text-align: center;
     color: transparent;
@@ -1147,7 +1147,7 @@ footer {
 
 .pur-opt2-desc {
     position: relative;
-    top: 70px;
+    top: 10.78vh;
     width: 52vh;
     margin: auto;
     text-align: center;
@@ -1159,7 +1159,7 @@ footer {
 
 .pur-opt3-title {
     position: relative;
-    top: 33px;
+    top: 5.08vh;
     margin: auto;
     text-align: center;
     color: white;
@@ -1171,7 +1171,7 @@ footer {
 
 .pur-opt3-desc {
     position: relative;
-    top: 70px;
+    top: 10.78vh;
     width: 52vh;
     margin: auto;
     text-align: center;
@@ -1498,7 +1498,7 @@ input::-webkit-inner-spin-button {
     width: 92vh;
     color: white;
     font-family: 'Inter', sans-serif;
-    font-size: 14px;
+    font-size: 2.15vh;
 }
 
 @keyframes s-barIn {
@@ -1506,3 +1506,6 @@ input::-webkit-inner-spin-button {
         width: 50%;
     }
 }
+
+/* Vehicles page */
+
