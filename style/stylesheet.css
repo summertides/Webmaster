@@ -445,19 +445,19 @@ footer {
 
 .a-titlebox {
     position: absolute;
-    top: 100px;
+    top: 10.4vh;
     width: 100%;
-    height: 450px;
+    height: 46.8vh;
     background-color: rgba(255, 255, 255, 0);
     overflow-y: hidden;
 }
 
 .a-toptext {
     position: relative;
-    left: -700px;
+    left: -72.84vh;
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.87vh;
     letter-spacing: 1px;
     color: white;
     opacity: 70%;
@@ -466,12 +466,12 @@ footer {
 
 .a-titletext-viva {
     position: relative;
-    top: -140px;
-    left: 2500px;
+    top: -14.56vh;
+    left: 260.1vh;
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
-    font-size: 128px;
-    letter-spacing: 3px;
+    font-size: 13.31vh;
+    letter-spacing: 0.3vh;
     text-shadow: 0px 0px 15px black;
     color: white;
     animation: text-viva 2s ease forwards;
@@ -479,12 +479,12 @@ footer {
 
 .a-titletext-galactica {
     position: relative;
-    top: -300px;
-    left: -2080px;
+    top: -31.21vh;
+    left: -216.44vh;
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
-    font-size: 128px;
-    letter-spacing: 3px;
+    font-size: 13.31vh;
+    letter-spacing: 0.3vh;
     text-shadow: 0px 0px 15px black;
     color: white;
     animation: text-galactica 2.5s ease forwards;
@@ -494,12 +494,12 @@ footer {
 .a-titletext-viva-s {
     position: relative;
     width: 2000%;
-    top: -700px;
-    left: 2500px;
+    top: -72.84vh;
+    left: 260.14vh;
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
-    font-size: 128px;
-    letter-spacing: 3px;
+    font-size: 13.31vh;
+    letter-spacing: 0.3vh;
     color: rgba(0, 0, 0, 0);
     -webkit-text-stroke-width: 4px;
     -webkit-text-stroke-color: white;
@@ -510,12 +510,12 @@ footer {
 .a-titletext-galactica-s {
     position: relative;
     width: 2000%;
-    top: -860px;
-    left: -12000px;
+    top: -89.49vh;
+    left: -124.86vh;
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
-    font-size: 128px;
-    letter-spacing: 3px;
+    font-size: 13.31vh;
+    letter-spacing: 0.3vh;
     color: rgba(0, 0, 0, 0);
     -webkit-text-stroke-width: 4px;
     -webkit-text-stroke-color: white;
@@ -526,8 +526,8 @@ footer {
 .a-textdivide {
     position: relative;
     width: 350%;
-    left: -50px;
-    top: -1000px;
+    left: -5.2vh;
+    top: -104.05vh;
     background: linear-gradient(to right, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.1) 100%);
     background-size: 200% auto;
     color: transparent;
@@ -538,13 +538,13 @@ footer {
     animation: gradientslide 7s linear infinite;
     font-family: 'Inter', sans-serif;
     font-style: italic;
-    font-size: 12px;
+    font-size: 1.25vh;
 }
 
 .a-info-textbox {
     position: absolute;
     left: 7.5%;
-    top: 80vh;
+    top: 45vh;
     width: 85%;
     height: 31vh;
     border-style: solid;
@@ -559,7 +559,7 @@ footer {
     position: relative;
     font-family: 'Rubik', sans-serif;
     left: 4vh;
-    top: -3vh;
+    top: -3.6vh;
     font-weight: 700;
     font-size: 6vh;
     text-shadow: 0px 0px 15px black;
@@ -567,41 +567,41 @@ footer {
 }
 
 .a-info-text {
-    font-size: 16px;
+    font-size: 2vh;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     color: white;
-    margin: 15px;
+    margin: 1.56vh;
 }
 
 /* About Page Keyframes */
 @keyframes slideIn {
     to {
-        left: 350px;
+        left: 36.42vh;
     }
 }
 
 @keyframes text-viva {
     to {
-        left: 120px;
+        left: 12.48vh;
     }
 }
 
 @keyframes text-viva-s {
     to {
-        left: -558px;
+        left: -58.06vh;
     }
 }
 
 @keyframes text-galactica {
     to {
-        left: 80px;
+        left: 8.32vh;
     }
 }
 
 @keyframes text-galactica-s {
     to {
-        left: -714px;
+        left: -74.29vh;
     }
 }
 
@@ -1433,7 +1433,7 @@ input::-webkit-inner-spin-button {
     height: 7vh;
     overflow: hidden;
     border-style: solid;
-    border-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.15);
     border-radius: 3vh;
     transition: ease 1s;
 }
@@ -1509,3 +1509,118 @@ input::-webkit-inner-spin-button {
 
 /* Vehicles page */
 
+.v-container {
+    position: absolute;
+    left: 13vh;
+    bottom: 42vh;
+    padding: 2rem;
+}
+
+.v-img-box {
+    position: absolute;
+    overflow: hidden;
+    width: 162vh;
+    height: 42vh;
+    left: 16vh;
+    bottom: -4vh;
+    border-radius: 3.5vh;
+    border: solid 0.5vh rgba(255, 255, 255, 0.15)
+}
+
+.v-container2 {
+    position: absolute;
+    left: 13vh;
+    bottom: -49vh;
+    padding: 2rem;
+}
+
+.v-container3 {
+    position: absolute;
+    left: 13vh;
+    bottom: -139vh;
+    padding: 2rem;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 64vh;
+    margin: 0 auto;
+}
+  
+.slider {
+    display: flex;
+    border: solid 0.45vh rgba(255, 255, 255, 0.2);
+    width: 62.43vh;
+    height: 35.17vh;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0 0 0 0.25);
+    border-radius: 2.6vh;
+}
+  
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+  
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+  
+.slider-nav a {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 70%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-width: 0.3vh;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.3);
+    transition: opacity ease 250ms;
+}
+  
+.slider-nav a:hover {
+    background-color: #fff;
+}
+
+.v-textbox {
+    position: absolute;
+    width: 90vh;
+    height: 35.17vh;
+    top: 18.7vh;
+    right: 19vh;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.15);
+    border-radius: 3vh;
+}
+
+.v-titleinbox {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    top: 2vh;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 5.5vh;
+    letter-spacing: 1vh;
+}
+
+.v-textinbox {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    top: 3vh;
+    width: 92vh;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 2.15vh;
+}
