@@ -1501,6 +1501,47 @@ input::-webkit-inner-spin-button {
     font-size: 2.15vh;
 }
 
+.s-image {
+    position: absolute;
+    width: 100vh;
+    height: 100vh;
+    right: -10vh;
+    top: 38vh;
+}
+
+.s-training-button {
+    position: absolute;
+    bottom: -17vh;
+    left: 6%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: solid 0.5vh rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.3);
+    border-radius: 3vh;
+    width: 85%;
+    height: 8vh;
+    letter-spacing: 0.7vh;
+    transition: 1.5s ease;
+}
+
+.s-training-buttontext {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 3vh;
+    top: 2vh;
+}
+
+.s-training-button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: solid 0.5vh rgba(255, 255, 255, 0.25);
+    color: rgb(255, 255, 255);
+    transition: 0.5s ease;
+    transform: scale(1.05);
+    letter-spacing: 1.5vh;
+}
+
 @keyframes s-barIn {
     to {
         width: 50%;
@@ -1511,8 +1552,8 @@ input::-webkit-inner-spin-button {
 
 .v-container {
     position: absolute;
-    left: 13vh;
-    bottom: 42vh;
+    left: 11.5vh;
+    bottom: 40.5vh;
     padding: 2rem;
 }
 
@@ -1523,21 +1564,21 @@ input::-webkit-inner-spin-button {
     height: 42vh;
     left: 16vh;
     bottom: -4vh;
-    border-radius: 3.5vh;
+    border-radius: 4vh;
     border: solid 0.5vh rgba(255, 255, 255, 0.15)
 }
 
 .v-container2 {
     position: absolute;
-    left: 13vh;
-    bottom: -49vh;
+    left: 11.5vh;
+    bottom: -50.5vh;
     padding: 2rem;
 }
 
 .v-container3 {
     position: absolute;
-    left: 13vh;
-    bottom: -139vh;
+    left: 11.5vh;
+    bottom: -140.5vh;
     padding: 2rem;
 }
 
@@ -1594,8 +1635,8 @@ input::-webkit-inner-spin-button {
     position: absolute;
     width: 90vh;
     height: 35.17vh;
-    top: 18.7vh;
-    right: 19vh;
+    top: 18.4vh;
+    right: 32vh;
     background-color: rgba(255, 255, 255, 0.1);
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.15);
@@ -1619,7 +1660,7 @@ input::-webkit-inner-spin-button {
     text-align: center;
     margin: auto;
     top: 3vh;
-    width: 92vh;
+    width: 80vh;
     color: white;
     font-family: 'Inter', sans-serif;
     font-size: 2.15vh;
