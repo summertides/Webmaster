@@ -8,6 +8,8 @@
         <meta content="./logo.png" property="og:image"/>
         <meta content="#000a17" data-react-helmet="true" name="theme-color"/>
         <script defer src="./scripts/topbar.js" type="text/javascript"></script>
+        <script defer src="./scripts/audioplayer.js" type="text/javascript"></script>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
         <link rel="stylesheet" href="./style/stylesheet.css">
         <title>
             Procedure | Viva Galactica
@@ -62,3 +64,55 @@
             <img src="icons/procedure.svg" id="icon-nav6">
         </a>
     </div>
+
+    <h1 class="pro-title">
+        PROCEDURES
+    </h1>
+
+    <h2 class="pro-subtitle1">
+        LAUNCH
+    </h2>
+    <p class="pro-bg-num1">1</p>
+    <p class="pro-txt1">
+        When you reserve a Spaceship at one of our stations, your voyage officially begins. Your voyage to release altitude is exciting because our spaceflight system uses a countdown sequence. Once in space and on the move, you may make use of the enjoyable features that are offered on each spacecraft.
+    </p>
+
+    <h2 class="pro-subtitle2">
+        RECOVERY
+    </h2>
+    <p class="pro-bg-num2">2</p>
+    <p class="pro-txt2">
+        A laser guidance system is used by our numerous space stations, to safely lead our spacecraft to the stations. A system on board will also be used by the ship's engineers and computers to aid in the ship's return to our destinations.
+    </p>
+
+    <h2 class="pro-subtitle3">
+        ARRIVAL
+    </h2>
+    <p class="pro-bg-num3">3</p>
+    <p class="pro-txt3">
+        Upon arrival, you will receive a little gift to show our appreciation for you embarking on this journey with us. Enjoy your stay and vacation, or new place to live, however your living situation is, we hope to one day see you again! We hope our flight was enjoyable and comfortable for you.
+    </p>
+    <p class="a-info-title3">
+        HUMBLE, HEAD AEROSPACE ENGINEER
+    </p>
+    <div style="bottom: -90vh;" class="audio-player" data-url="./imports/humble_dialogue.mp3">
+        <div class="player">
+          <button type="button" class="btn-play">
+            <span class="material-icons icon-play">play_arrow</span>
+            <span class="material-icons icon-pause">pause</span>
+            <span class="material-icons icon-loop">loop</span>
+            <span class="material-icons icon-error">error_outline</span>
+          </button>
+          <div class="timeline">
+            <div class="line">
+              <input dir="ltr" type="range" min="0" max="100" value="0">
+            </div>
+            <div class="data">
+            </div>
+          </div>
+        </div>
+        <div class="user">
+          <img src="/images/IMG_3138.jpg" />
+        </div>
+      </div>
+    <div style="bottom: -100vh" class="a-extender"></div>

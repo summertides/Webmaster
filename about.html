@@ -8,6 +8,8 @@
         <meta content="./logo.png" property="og:image"/>
         <meta content="#000a17" data-react-helmet="true" name="theme-color"/>
         <script defer src="./scripts/topbar.js" type="text/javascript"></script>
+        <script defer src="./scripts/audioplayer.js" type="text/javascript"></script>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
         <link rel="stylesheet" href="./style/stylesheet.css">
         <title>
             About Us | Viva Galactica
@@ -106,4 +108,32 @@
             Fast forward a couple years, and the two became interested in space exploration and the interstellars. And so they began working on a rocketship, their first successful flight from Earth to Mars in 2048, August 18th. Amazingly, it was all done out of their grandparent's basement. Soon that all changed when they were sponsered by NASA and SpaceX. They now thrive in a technologically advanced warehouse, with tens of thousands of employees.
         </p>
     </div>
+
+    <img class="a-portrait1" src="images/IMG_9234.jpg">
+    <img class="a-portrait2" src="images/IMG_9247.jpg">
+
+    <p class="a-info-title2">
+        KAREN, HEAD-CAPTAIN OF THE BLESSING
+    </p>
+    <div class="audio-player" data-url="./imports/karen_dialogue.mp3">
+        <div class="player">
+          <button type="button" class="btn-play">
+            <span class="material-icons icon-play">play_arrow</span>
+            <span class="material-icons icon-pause">pause</span>
+            <span class="material-icons icon-loop">loop</span>
+            <span class="material-icons icon-error">error_outline</span>
+          </button>
+          <div class="timeline">
+            <div class="line">
+              <input dir="ltr" type="range" min="0" max="100" value="0">
+            </div>
+            <div class="data">
+            </div>
+          </div>
+        </div>
+        <div class="user">
+          <img src="/images/karenprofessional.jpg" />
+        </div>
+      </div>
+    <div class="a-extender"></div>
 </html>
