@@ -461,6 +461,28 @@ footer {
     margin: 0;
 }
 
+.brochure {
+    position: absolute;
+    top: 137vh;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 1.87vh;
+    letter-spacing: 1.2vh;
+    color: white;
+    opacity: 0.5
+}
+
+.quick {
+    position: absolute;
+    transform: translate(-50%, 0%) scale(0.7);
+    top: 130vh;
+    left: 50%;
+    width: 116.81vh;
+    height: 90.26vh;
+}
+
 .a-titlebox {
     position: absolute;
     top: 10.4vh;
